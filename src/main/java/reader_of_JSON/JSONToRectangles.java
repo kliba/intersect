@@ -14,6 +14,7 @@ public final class JSONToRectangles {
     private static int resultListMaxSize = 10;
     private static Rectangle rectangle;
 
+
     /**
      * Based on the param it finds the json file that should be read. In the file it only handle the JSON array
      * that mapped by "rects" keyword. Then gets required data line by line. These data are checked by
