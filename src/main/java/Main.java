@@ -1,26 +1,27 @@
 import intersectings.IntersectedRectangles;
 import reader_of_JSON.JSONToRectangles;
 
-import java.awt.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
+        boolean again = true;
 
-    String fullPath = "testJSONfiles/JSON_invalid_rects_tag_test5";
+        while (again) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("");
+            System.out.println("-------------------------------------------------------------------------------------");
+            System.out.println("Enter your FULL PATH to discover the rectangles intersections (or press `q` to quit):");
+            String fullPath = scanner.nextLine();
 
-        System.out.println(JSONToRectangles.readRectsJSON(fullPath));
-
-
-        List<Rectangle> testRectangles = new ArrayList<>();
-        testRectangles.add(new Rectangle(100, 100, 250, 80));
-        testRectangles.add(new Rectangle(120, 200, 250, 150));
-        testRectangles.add(new Rectangle(140, 160, 250, 100));
-        testRectangles.add(new Rectangle(160, 140, 350, 190));
-
-        IntersectedRectangles.printOutput(testRectangles);
+            if (fullPath.equals("q") || fullPath.equals("Q")) {
+                again = false;
+                System.out.println("Bye bye!");
+            } else {
+                IntersectedRectangles.printOutput(JSONToRectangles.readRectsJSON(fullPath));
+            }
+        }
     }
 
 }

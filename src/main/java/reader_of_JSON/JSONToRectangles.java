@@ -11,7 +11,7 @@ import java.util.List;
 
 public final class JSONToRectangles {
 
-    private static int resultListMaxSize = 10;
+    private static int resultRectangleListMaxSize = 10;
     private static Rectangle rectangle;
 
 
@@ -22,6 +22,7 @@ public final class JSONToRectangles {
      * If the size is exactly ^resultListMaxSize^ field it stops reading from the file it just returns the required list.
      * As it uses JSONParser, FileReader, JSONArray, isRectangleAndCoordinateValid() etc...
      * We can expect to following exceptions: FIlE NOT FOUND, ILLEGAL ARGUMENT, IO, NUMBER FORMAT, EXCEPTION
+     *
      * @param fullPath This shows the direction to out JSON file.
      * @return The return value is a rectangle list. A list what contains all valid rectangles up to defined size.
      */
@@ -50,7 +51,7 @@ public final class JSONToRectangles {
                             lilstOfRectangles.add(rectangle);
                         }
 
-                        if (isListSizeNr(lilstOfRectangles, resultListMaxSize)) {
+                        if (isListSizeNr(lilstOfRectangles, resultRectangleListMaxSize)) {
                             break;
                         }
 
@@ -68,10 +69,10 @@ public final class JSONToRectangles {
     }
 
     /**
-     * Checks if the x coordinate, y coordinate, height, and weight are valid so fit to rectangle constructor. Then
-     * checks that if the rectangle can be placing to an Integer coordinate table. The height and/or weight can be only
-     * positive integer. (height > 0, weight > 0)
-     * x coordinate added to weight less than integer max value (x + w > 2,147,483,647 (inclusive)),
+     * Checks if the x coordinate, y coordinate, height, and width are valid so fit to rectangle constructor. Then
+     * checks that if the rectangle can be placing to an Integer coordinate table. The height and/or width can be only
+     * positive integer. (height > 0, width > 0)
+     * x coordinate added to width less than integer max value (x + w > 2,147,483,647 (inclusive)),
      * y coordinate added to height less than integer max value (y + h > 2,147,483,647 (inclusive)),
      * x coordinate must be greater than integer min value (x > -2,147,483,647 (inclusive)),
      * y coordinate must be greater than integer min value (y > -2,147,483,647 (inclusive)),
@@ -79,16 +80,16 @@ public final class JSONToRectangles {
      * @param x as rectangle x coordinate
      * @param y as rectangle y coordinate
      * @param h as height of the rectangle
-     * @param w as weight of the rectangle
+     * @param w as width of the rectangle
      * @return true if the parameters can create a rectangle and this rectangle can be placed to an
      * integer coordinate table. On the other hand we can except to an Illegal Argument Exception.
      */
     public static boolean isRectangleAndCoordinateValid(Long x, Long y, Long h, Long w) {
 
-        if (x < Integer.MIN_VALUE || y < Integer.MIN_VALUE ||  h < 1 || w < 1 ||
-        x + w > Integer.MAX_VALUE || y + h > Integer.MAX_VALUE) {
+        if (x < Integer.MIN_VALUE || y < Integer.MIN_VALUE || h < 1 || w < 1 ||
+                x + w > Integer.MAX_VALUE || y + h > Integer.MAX_VALUE) {
 
-            throw new IllegalArgumentException("Rectangle is not fit to a 2D integer coordinate table or weight " +
+            throw new IllegalArgumentException("Rectangle is not fit to a 2D integer coordinate table or width " +
                     "and/or height is not positive number.");
         }
 
@@ -97,14 +98,14 @@ public final class JSONToRectangles {
 
     /**
      * Checks the input list size. If this list size is equal to nr param returns true.
+     *
      * @param listOfRectangles Rectangles list, what size should be checked.
-     * @param nr Size of the list we expect.
+     * @param nr               Size of the list we expect.
      * @return true if the input list size param is equal to the input nr param.
      */
     public static boolean isListSizeNr(List<Rectangle> listOfRectangles, int nr) {
         return listOfRectangles.size() == nr;
     }
-
 
 
 }

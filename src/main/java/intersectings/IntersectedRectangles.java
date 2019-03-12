@@ -49,8 +49,8 @@ public final class IntersectedRectangles {
     }
 
     /**
-     * Prints the input list as the specification defined. If the parameter size is smaller than 1 it displays
-     * a warnint message
+     * Prints the input list as the specification defined. If the parameter size is smaller than 1 it prints
+     * "The input rectangle list is empty." - message.
      * (e.g:
      * Input:
      * 1: Rectangle at (0,0), w=5, h=5.
@@ -61,7 +61,7 @@ public final class IntersectedRectangles {
      *
      * @param listOfRectangles
      */
-    public static void printRectangles(List<Rectangle> listOfRectangles) {
+    private static void printRectangles(List<Rectangle> listOfRectangles) {
         System.out.println("Input:");
 
         if (0 < listOfRectangles.size()) {
@@ -75,7 +75,26 @@ public final class IntersectedRectangles {
         }
     }
 
-    public static int printIntersections(List<Rectangle> listOfRectangles, int lineCounter) {
+    /**
+     * Compares the elements ot the listOfRectangles (one element is not compared by itself). If there is intersection
+     * creating a new Rectangle object by the parameters of intersect. If the height and width are bigger than zero
+     * that is going to be printed as the specification required.
+     * If the intersection list is empty it prints "There is no single intersect." -message.
+     * There is an integer line counter. This signs the printed line number. It increases by new printed line.
+     * (e.g:
+     * 1: Between rectangle 1 and 3 at (140,160), w=210, h=20.
+     * 2: Between rectangle 1 and 4 at (160,140), w=190, h=40.
+     * 3: Between rectangle 2 and 3 at (140,200), w=230, h=60.
+     * 4: Between rectangle 2 and 4 at (160,200), w=210, h=130.
+     * 5: Between rectangle 3 and 4 at (160,160), w=230, h=100.)
+     *
+     * @param listOfRectangles specified rectangle list
+     * @param lineCounter      specified number where the increasing starts.
+     * @return lineCounter what has already been increased by the printed lines number.
+     */
+    private static int printIntersections(List<Rectangle> listOfRectangles, int lineCounter) {
+        int originLineCounter = lineCounter;
+
         System.out.println("");
         System.out.println("Intersections:");
 
@@ -93,50 +112,80 @@ public final class IntersectedRectangles {
                     }
                 }
             }
+            if (originLineCounter == lineCounter) {
+                System.out.println("There is no single intersect.");
+            }
         } else {
-            System.out.println("There is no intersect.");
+            System.out.println("There is no single intersect.");
         }
 
         return lineCounter;
     }
 
-    public static void printMultiIntersections(List<Rectangle> listOfRectangles, int lineCounter) {
+    /**
+     * Creates an intersect list from the rectangle list param. Then it creates a multiple intersects list based on the
+     * newly created intersect list. If our multiple list is not empty it iterates on the multiple intersects list
+     * and these elements compared to the elements of the rectangle list param. When the current element of multiple
+     * list and element of rectangle list are equals it stores their serial number in a string builder.
+     * Using the data of this string builder and elements of the rectangle list it prints out the multiple intersects
+     * as the specification requires. This method waits a line counter param where the line counting starts.
+     * If the listOfRectangle param is empty it writes "There is no multiple intersect." - message.
+     * (e.g:
+     * 6: Between rectangle 1, 3 and 4 at (160,160), w=190, h=20.
+     * 7: Between rectangle 2, 3 and 4 at (160,200), w=210, h=60. )
+     *
+     * @param listOfRectangles specified rectangle list
+     * @param lineCounter      where the increased counting starts from.
+     */
+    private static void printMultiIntersections(List<Rectangle> listOfRectangles, int lineCounter) {
         List<Rectangle> listOfIntersects = new ArrayList<>(findIntersects(listOfRectangles));
         List<Rectangle> listOfMultiIntersects = new ArrayList<>(findIntersects(listOfIntersects));
         listOfMultiIntersects = removeDuplicatesAndNotValidIntersects(listOfMultiIntersects);
 
         if (listOfMultiIntersects.size() > 0) {
 
-            for (int i = 0; i < listOfMultiIntersects.size(); i++) {
+            for (Rectangle rectangle : listOfMultiIntersects) {
 
-                String relevantRects = "";
-                for (int j = 0; j < listOfRectangles.size(); j++) {
-                    if (listOfRectangles.get(j).contains(listOfMultiIntersects.get(i))) {
-                        relevantRects += (j + 1);
+                StringBuilder relevantRects = new StringBuilder();
+
+                for (int i = 0; i < listOfRectangles.size(); i++) {
+
+                    if (listOfRectangles.get(i).contains(rectangle)) {
+                        relevantRects.append(i + 1);
                     }
                 }
 
-                String formedRelevantRects = "";
-                for (int k = 0; k < relevantRects.length(); k++) {
-                    if (k == relevantRects.length() - 2) {
-                        formedRelevantRects += relevantRects.charAt(k) + " and ";
-                    } else if (k == relevantRects.length() - 1) {
-                        formedRelevantRects += relevantRects.charAt(k) + "";
+                StringBuilder formedRelevantRects = new StringBuilder();
+                for (int i = 0; i < relevantRects.length(); i++) {
+
+                    if (i == relevantRects.length() - 2) {
+                        formedRelevantRects.append(relevantRects.charAt(i)).append(" and ");
+                    } else if (i == relevantRects.length() - 1) {
+                        formedRelevantRects.append(relevantRects.charAt(i));
                     } else {
-                        formedRelevantRects += relevantRects.charAt(k) + ", ";
+                        formedRelevantRects.append(relevantRects.charAt(i)).append(", ");
                     }
                 }
                 System.out.println("    " + lineCounter + ": Between rectangle " + formedRelevantRects +
-                        " at (" + listOfMultiIntersects.get(i).x + "," + listOfMultiIntersects.get(i).y +
-                        "), w=" + listOfMultiIntersects.get(i).width + ", h=" + listOfMultiIntersects.get(i).height +
+                        " at (" + rectangle.x + "," + rectangle.y +
+                        "), w=" + rectangle.width + ", h=" + rectangle.height +
                         ".");
                 lineCounter++;
             }
         } else {
-            System.out.println("There is no intersect.");
+            System.out.println("There is no multiple intersect.");
         }
     }
 
+    /**
+     * There is a line counter to be declared and assigned to a number where the increasing counting starts by
+     * new printed intersection line. These counted lines will appears on the console as intersecting line signer.
+     * Prints the list of rectangles elements by invoking printRectangles().
+     * Also prints the list of intersects elements by invoking printIntersections().
+     * Also prints the list of intersects elements by invoking printMultiIntersections()
+     *
+     * @param listOfRectangles specified rectangle list.
+     */
     public static void printOutput(List<Rectangle> listOfRectangles) {
         int lineCounter = 1;
 
