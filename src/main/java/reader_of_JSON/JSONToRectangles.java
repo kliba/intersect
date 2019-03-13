@@ -11,7 +11,7 @@ import java.util.List;
 
 public final class JSONToRectangles {
 
-    private static int resultRectangleListMaxSize = 10;
+    private static final int resultRectangleListMaxSize = 10;
     private static Rectangle rectangle;
 
 
@@ -46,7 +46,6 @@ public final class JSONToRectangles {
                         Long w = (Long) rectJson.get("w");
 
                         if (isRectangleAndCoordinateValid(x, y, h, w)) {
-                            //Rectangle(int x, int y, int width, int height) - constructor (Class Rectangle)
                             rectangle = new Rectangle(x.intValue(), y.intValue(), w.intValue(), h.intValue());
                             lilstOfRectangles.add(rectangle);
                         }

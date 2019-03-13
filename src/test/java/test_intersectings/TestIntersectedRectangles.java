@@ -122,4 +122,70 @@ public class TestIntersectedRectangles {
 
         assertEquals(resultList, IntersectedRectangles.removeDuplicatesAndNotValidIntersects(testList));
     }
+
+    @Test
+    public void testFindAllIntersectsByIntersects() {
+        List<Rectangle> testRectangles = new ArrayList<>();
+        testRectangles.add(new Rectangle(100, 100, 250, 80));
+        testRectangles.add(new Rectangle(120, 200, 250, 150));
+        testRectangles.add(new Rectangle(140, 160, 250, 100));
+        testRectangles.add(new Rectangle(160, 140, 350, 190));
+
+        List<Rectangle> resultList = new ArrayList<>();
+        resultList.add(new Rectangle(140, 160, 210, 20));
+        resultList.add(new Rectangle(160, 140, 190, 40));
+        resultList.add(new Rectangle(140, 200, 230, 60));
+        resultList.add(new Rectangle(160, 200, 210, 130));
+        resultList.add(new Rectangle(160, 160, 230, 100));
+        resultList.add(new Rectangle(160, 160, 190, 20));
+        resultList.add(new Rectangle(160, 200, 210, 60));
+
+        assertEquals(resultList, IntersectedRectangles.findAllIntersects(testRectangles));
+    }
+
+    @Test
+    public void testFindAllIntersectsByNoIntersects() {
+        List<Rectangle> testRectangles = new ArrayList<>();
+        testRectangles.add(new Rectangle(1, 1, 25, 25));
+        testRectangles.add(new Rectangle(-10, -20, 2, 3));
+        testRectangles.add(new Rectangle(-140, 160, 40, 40));
+        testRectangles.add(new Rectangle(160, -140, 35, 90));
+
+        List<Rectangle> resultList = new ArrayList<>();
+
+        assertEquals(resultList, IntersectedRectangles.findAllIntersects(testRectangles));
+    }
+
+    @Test
+    public void testFindAllIntersectsByOneRectangle() {
+        List<Rectangle> testRectangles = new ArrayList<>();
+        testRectangles.add(new Rectangle(100, 120, 25, 400));
+
+        List<Rectangle> resultList = new ArrayList<>();
+
+        assertEquals(resultList, IntersectedRectangles.findAllIntersects(testRectangles));
+    }
+
+    @Test
+    public void testFindAllIntersectsByEmptyList() {
+        List<Rectangle> testRectangles = new ArrayList<>();
+        List<Rectangle> resultList = new ArrayList<>();
+
+        assertEquals(resultList, IntersectedRectangles.findAllIntersects(testRectangles));
+    }
+
+    @Test
+    public void testFindAllIntersectsBySameRectangles() {
+        List<Rectangle> testRectangles = new ArrayList<>();
+        testRectangles.add(new Rectangle(0, 0, 1, 1));
+        testRectangles.add(new Rectangle(0, 0, 1, 1));
+        testRectangles.add(new Rectangle(10, 10, 1, 1));
+        testRectangles.add(new Rectangle(10, 10, 1, 1));
+
+        List<Rectangle> resultList = new ArrayList<>();
+        resultList.add(new Rectangle(0, 0, 1, 1));
+        resultList.add(new Rectangle(10, 10, 1, 1));
+
+        assertEquals(resultList, IntersectedRectangles.findAllIntersects(testRectangles));
+    }
 }

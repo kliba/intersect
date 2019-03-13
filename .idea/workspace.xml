@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eaa64601-8456-4dc6-b538-1e8e49d4c258" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/documents/testJSONfiles/JSON_main_test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documents/testJSONfiles/JSON_final_test" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/intersectings/IntersectedRectangles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/intersectings/IntersectedRectangles.java" afterDir="false" />
@@ -29,37 +30,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/intersectings/IntersectedRectangles.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3610">
-              <caret line="190" lean-forward="true" selection-start-line="190" selection-end-line="190" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/documents/testJSONfiles/JSON_invalid_rectangle_data_test4">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/reader_of_JSON/JSONToRectangles.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="13" column="55" lean-forward="true" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-133">
-              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+            <state relative-caret-position="-984">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -67,8 +41,53 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+            <state relative-caret-position="399">
+              <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/test_intersectings/TestIntersectedRectangles.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="162" selection-start-line="162" selection-end-line="162" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/documents/testJSONfiles/JSON_final_test">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="988">
+              <caret line="52" column="40" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="39" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/intersectings/IntersectedRectangles.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="206" column="59" selection-start-line="206" selection-start-column="59" selection-end-line="206" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -108,11 +127,13 @@
         <option value="$PROJECT_DIR$/src/test/java/test_readerer_of_JSON/TestJSONToRectangles.java" />
         <option value="$PROJECT_DIR$/src/main/java/intersectings/IntersectsRetangles.java" />
         <option value="$PROJECT_DIR$/src/main/java/intersectings/IntersectedRetangles.java" />
-        <option value="$PROJECT_DIR$/src/test/java/test_intersectings/TestIntersectedRectangles.java" />
         <option value="$PROJECT_DIR$/documents/testJSONfiles/JSON_main_test" />
-        <option value="$PROJECT_DIR$/src/main/java/intersectings/IntersectedRectangles.java" />
         <option value="$PROJECT_DIR$/src/main/java/reader_of_JSON/JSONToRectangles.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/intersectings/IntersectedRectangles.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test_intersectings/TestIntersectedRectangles.java" />
+        <option value="$PROJECT_DIR$/documents/testJSONfiles/JSON_final_test" />
       </list>
     </option>
   </component>
@@ -135,11 +156,6 @@
             <path>
               <item name="intersect" type="b2602c69:ProjectViewProjectNode" />
               <item name="intersect" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="intersect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="intersect" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="intersect" type="b2602c69:ProjectViewProjectNode" />
@@ -182,14 +198,6 @@
               <item name="intersect" type="b2602c69:ProjectViewProjectNode" />
               <item name="intersect" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="reader_of_JSON" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="intersect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="intersect" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -207,14 +215,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="test_intersectings" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="intersect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="intersect" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test_readerer_of_JSON" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -223,7 +223,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552411814311" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552466937426" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -255,7 +255,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestIntersectedRectangles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestIntersectedRectangles.testFindAllIntersectsByEmptyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="balint.kliszki.intern.intersect.test" />
       <extension name="coverage">
         <pattern>
@@ -265,28 +265,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="test_intersectings" />
       <option name="MAIN_CLASS_NAME" value="test_intersectings.TestIntersectedRectangles" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestIntersectedRectangles.testRemoveDuplicatesAndNotValidIntersectsByEmptyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="balint.kliszki.intern.intersect.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test_intersectings.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test_intersectings" />
-      <option name="MAIN_CLASS_NAME" value="test_intersectings.TestIntersectedRectangles" />
-      <option name="METHOD_NAME" value="testRemoveDuplicatesAndNotValidIntersectsByEmptyList" />
+      <option name="METHOD_NAME" value="testFindAllIntersectsByEmptyList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestIntersectedRectangles.testRemoveDuplicatesAndNotValidIntersectsByRemoveWidthIsMinusOfRect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestIntersectedRectangles.testFindAllIntersectsByNoIntersects" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="balint.kliszki.intern.intersect.test" />
       <extension name="coverage">
         <pattern>
@@ -296,23 +281,40 @@
       </extension>
       <option name="PACKAGE_NAME" value="test_intersectings" />
       <option name="MAIN_CLASS_NAME" value="test_intersectings.TestIntersectedRectangles" />
-      <option name="METHOD_NAME" value="testRemoveDuplicatesAndNotValidIntersectsByRemoveWidthIsMinusOfRect" />
+      <option name="METHOD_NAME" value="testFindAllIntersectsByNoIntersects" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestJSONToRectangles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestIntersectedRectangles.testFindAllIntersectsByOneRectangle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="balint.kliszki.intern.intersect.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test_readerer_of_JSON.*" />
+          <option name="PATTERN" value="test_intersectings.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test_readerer_of_JSON" />
-      <option name="MAIN_CLASS_NAME" value="test_readerer_of_JSON.TestJSONToRectangles" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="test_intersectings" />
+      <option name="MAIN_CLASS_NAME" value="test_intersectings.TestIntersectedRectangles" />
+      <option name="METHOD_NAME" value="testFindAllIntersectsByOneRectangle" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestIntersectedRectangles.testFindAllIntersectsBySameRectangles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="balint.kliszki.intern.intersect.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test_intersectings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test_intersectings" />
+      <option name="MAIN_CLASS_NAME" value="test_intersectings.TestIntersectedRectangles" />
+      <option name="METHOD_NAME" value="testFindAllIntersectsBySameRectangles" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -320,10 +322,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.TestIntersectedRectangles.testRemoveDuplicatesAndNotValidIntersectsByRemoveWidthIsMinusOfRect" />
-        <item itemvalue="JUnit.TestIntersectedRectangles" />
-        <item itemvalue="JUnit.TestJSONToRectangles" />
-        <item itemvalue="JUnit.TestIntersectedRectangles.testRemoveDuplicatesAndNotValidIntersectsByEmptyList" />
+        <item itemvalue="JUnit.TestIntersectedRectangles.testFindAllIntersectsByOneRectangle" />
+        <item itemvalue="JUnit.TestIntersectedRectangles.testFindAllIntersectsBySameRectangles" />
+        <item itemvalue="JUnit.TestIntersectedRectangles.testFindAllIntersectsByEmptyList" />
+        <item itemvalue="JUnit.TestIntersectedRectangles.testFindAllIntersectsByNoIntersects" />
       </list>
     </recent_temporary>
   </component>
@@ -341,27 +343,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestIntersectedRectangles_testRemoveDuplicatesAndNotValidIntersectsByRemoveADuplicated - 2019.03.12 at 13h 07m 12s.xml">
-      <configuration name="TestIntersectedRectangles.testRemoveDuplicatesAndNotValidIntersectsByRemoveADuplicated" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestIntersectedRectangles_testRemoveDuplicatesAndNotValidIntersectsByRemoveWnXMinusOfRect - 2019.03.12 at 13h 09m 10s.xml">
-      <configuration name="TestIntersectedRectangles.testRemoveDuplicatesAndNotValidIntersectsByRemoveWnXMinusOfRect" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestIntersectedRectangles_testRemoveDuplicatesAndNotValidIntersectsByRemoveWIsMinusOfRect - 2019.03.12 at 13h 10m 20s.xml">
-      <configuration name="TestIntersectedRectangles.testRemoveDuplicatesAndNotValidIntersectsByRemoveWIsMinusOfRect" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestIntersectedRectangles_testRemoveDuplicatesAndNotValidIntersectsByEmptyList - 2019.03.12 at 13h 11m 20s.xml">
-      <configuration name="TestIntersectedRectangles.testRemoveDuplicatesAndNotValidIntersectsByEmptyList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestIntersectedRectangles_testRemoveDuplicatesAndNotValidIntersectsByEmptyList - 2019.03.12 at 13h 15m 04s.xml">
-      <configuration name="TestIntersectedRectangles.testRemoveDuplicatesAndNotValidIntersectsByEmptyList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestIntersectedRectangles_testRemoveDuplicatesAndNotValidIntersectsByEmptyList - 2019.03.12 at 13h 15m 24s.xml">
-      <configuration name="TestIntersectedRectangles.testRemoveDuplicatesAndNotValidIntersectsByEmptyList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestIntersectedRectangles_testRemoveDuplicatesAndNotValidIntersectsByEmptyList - 2019.03.12 at 13h 15m 33s.xml">
-      <configuration name="TestIntersectedRectangles.testRemoveDuplicatesAndNotValidIntersectsByEmptyList" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestJSONToRectangles - 2019.03.12 at 14h 04m 22s.xml">
       <configuration name="TestJSONToRectangles" configurationId="JUnit" />
     </history-entry>
@@ -370,6 +351,27 @@
     </history-entry>
     <history-entry file="TestIntersectedRectangles_testRemoveDuplicatesAndNotValidIntersectsByRemoveWidthIsMinusOfRect - 2019.03.12 at 14h 06m 10s.xml">
       <configuration name="TestIntersectedRectangles.testRemoveDuplicatesAndNotValidIntersectsByRemoveWidthIsMinusOfRect" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestIntersectedRectangles_testFindAllIntersectsByIntersects - 2019.03.13 at 09h 29m 27s.xml">
+      <configuration name="TestIntersectedRectangles.testFindAllIntersectsByIntersects" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestIntersectedRectangles_testFindAllIntersectsByIntersects - 2019.03.13 at 09h 32m 17s.xml">
+      <configuration name="TestIntersectedRectangles.testFindAllIntersectsByIntersects" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestIntersectedRectangles_testFindAllIntersectsByIntersects - 2019.03.13 at 09h 33m 52s.xml">
+      <configuration name="TestIntersectedRectangles.testFindAllIntersectsByIntersects" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestIntersectedRectangles_testFindAllIntersectsByNoIntersects - 2019.03.13 at 09h 36m 08s.xml">
+      <configuration name="TestIntersectedRectangles.testFindAllIntersectsByNoIntersects" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestIntersectedRectangles_testFindAllIntersectsByEmptyList - 2019.03.13 at 09h 36m 51s.xml">
+      <configuration name="TestIntersectedRectangles.testFindAllIntersectsByEmptyList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestIntersectedRectangles_testFindAllIntersectsBySameRectangles - 2019.03.13 at 09h 38m 54s.xml">
+      <configuration name="TestIntersectedRectangles.testFindAllIntersectsBySameRectangles" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestIntersectedRectangles_testFindAllIntersectsByOneRectangle - 2019.03.13 at 09h 43m 00s.xml">
+      <configuration name="TestIntersectedRectangles.testFindAllIntersectsByOneRectangle" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -412,7 +414,7 @@
       <window_info id="UI Designer" order="3" />
       <window_info id="Learn" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.19977863" />
+      <window_info content_ui="combo" id="Project" order="6" weight="0.19977863" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.33078602" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.32969433" />
@@ -420,8 +422,8 @@
       <window_info anchor="bottom" id="Build" order="3" weight="0.3297062" />
       <window_info anchor="bottom" id="Messages" order="4" weight="0.32969433" />
       <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.31441048" />
+      <window_info active="true" anchor="bottom" id="Find" order="6" visible="true" weight="0.32969433" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.31441048" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.3995633" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -445,13 +447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/documents/testJSONfiles/JSON_invalid_coordinate_data_test3">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -471,20 +466,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/documents/testJSONfiles/JSON_invalid_rectangle_data_test4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/documents/testJSONfiles/JSON_invalid_rects_tag_test5">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -499,13 +480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test_intersectings/TestIntersectedRectangles.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1691">
-          <caret line="89" column="66" selection-start-line="89" selection-start-column="66" selection-end-line="89" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/documents/testJSONfiles/JSON_main_test">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -513,24 +487,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/intersectings/IntersectedRectangles.java">
+    <entry file="file://$PROJECT_DIR$/documents/testJSONfiles/JSON_invalid_rectangle_data_test4">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3610">
-          <caret line="190" lean-forward="true" selection-start-line="190" selection-end-line="190" />
+        <state relative-caret-position="57">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-133">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/reader_of_JSON/JSONToRectangles.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="13" column="55" lean-forward="true" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+        <state relative-caret-position="-984">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/intersectings/IntersectedRectangles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="206" column="59" selection-start-line="206" selection-start-column="59" selection-end-line="206" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test_intersectings/TestIntersectedRectangles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="162" selection-start-line="162" selection-end-line="162" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/documents/testJSONfiles/JSON_final_test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="988">
+          <caret line="52" column="40" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+        <state relative-caret-position="399">
+          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
         </state>
       </provider>
     </entry>

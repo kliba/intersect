@@ -59,7 +59,7 @@ public final class IntersectedRectangles {
      * 4: Rectangle at (2,2), w=5, h=5.
      * 5: Rectangle at (0,1), w=2, h=2.)
      *
-     * @param listOfRectangles
+     * @param listOfRectangles specified rectangle list
      */
     private static void printRectangles(List<Rectangle> listOfRectangles) {
         System.out.println("Input:");
@@ -92,7 +92,7 @@ public final class IntersectedRectangles {
      * @param lineCounter      specified number where the increasing starts.
      * @return lineCounter what has already been increased by the printed lines number.
      */
-    private static int printIntersections(List<Rectangle> listOfRectangles, int lineCounter) {
+    private static int findAndPrintIntersections(List<Rectangle> listOfRectangles, int lineCounter) {
         int originLineCounter = lineCounter;
 
         System.out.println("");
@@ -103,7 +103,6 @@ public final class IntersectedRectangles {
                 for (int j = i + 1; j < listOfRectangles.size(); j++) {
                     Rectangle intersect = new Rectangle(listOfRectangles.get(i).intersection(listOfRectangles.get(j)));
 
-                    //Rectangle(int x, int y, int width, int height) - constructor (Class Rectangle)
                     if (intersect.width > 0 && intersect.height > 0) {
                         System.out.println("    " + lineCounter + ": Between rectangle " + (i + 1) +
                                 " and " + (j + 1) + " at (" + intersect.x + "," +
@@ -137,7 +136,7 @@ public final class IntersectedRectangles {
      * @param listOfRectangles specified rectangle list
      * @param lineCounter      where the increased counting starts from.
      */
-    private static void printMultiIntersections(List<Rectangle> listOfRectangles, int lineCounter) {
+    private static void findAndPrintMultiIntersections(List<Rectangle> listOfRectangles, int lineCounter) {
         List<Rectangle> listOfIntersects = new ArrayList<>(findIntersects(listOfRectangles));
         List<Rectangle> listOfMultiIntersects = new ArrayList<>(findIntersects(listOfIntersects));
         listOfMultiIntersects = removeDuplicatesAndNotValidIntersects(listOfMultiIntersects);
@@ -186,11 +185,29 @@ public final class IntersectedRectangles {
      *
      * @param listOfRectangles specified rectangle list.
      */
-    public static void printOutput(List<Rectangle> listOfRectangles) {
+    public static void findAndPrintOutput(List<Rectangle> listOfRectangles) {
         int lineCounter = 1;
 
         printRectangles(listOfRectangles);
-        lineCounter = printIntersections(listOfRectangles, lineCounter);
-        printMultiIntersections(listOfRectangles, lineCounter);
+        lineCounter = findAndPrintIntersections(listOfRectangles, lineCounter);
+        findAndPrintMultiIntersections(listOfRectangles, lineCounter);
+    }
+
+    /**
+     * This method collects all single and multiple intersects. Then it merges these two list to a new one validates
+     * them and returns.
+     * @param listOfRectangles specified rectangle list.
+     * @return a list that contains all valid intersects.
+     */
+    public static List<Rectangle> findAllIntersects(List<Rectangle> listOfRectangles) {
+        List<Rectangle> listOfSingleIntersects = new ArrayList<>(findIntersects(listOfRectangles));
+        List<Rectangle> listOfMultiIntersects = new ArrayList<>(findIntersects(listOfSingleIntersects));
+        List<Rectangle> temp = new ArrayList<>(listOfSingleIntersects);
+        temp.addAll(listOfMultiIntersects);
+        temp = removeDuplicatesAndNotValidIntersects(temp);
+
+        List<Rectangle> listOfAllIntersects = new ArrayList<>(temp);
+
+        return listOfAllIntersects;
     }
 }
