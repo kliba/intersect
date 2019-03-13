@@ -45,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="326">
-              <caret line="38" column="5" selection-end-line="45" selection-end-column="75" />
+              <caret line="35" lean-forward="true" selection-end-line="41" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -217,7 +217,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552471861427" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552472052474" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -541,7 +541,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
-          <caret line="38" column="5" selection-end-line="45" selection-end-column="75" />
+          <caret line="35" lean-forward="true" selection-end-line="41" selection-end-column="75" />
         </state>
       </provider>
     </entry>

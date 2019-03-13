@@ -26,17 +26,13 @@
     <li>com.googlecode.json-simple 1.1.1</li>
   </ul>
 
-<p>As the build.gradle file is committed you can find the dependencies of them.
-  <a href="https://github.com/kliba/intersect/blob/master/build.gradle">build.gradle</a></p>
+<p>As the build.gradle file is committed you can find the dependencies here:.
+  <ul>
+  <li><a href="https://github.com/kliba/intersect/blob/master/build.gradle">build.gradle</a></li>
+  </ul></p>
 
 <p>The entry point locates in the Main.class so it can be executed from:<br>
   <i>(path: ./intersect/src/main/java/Main.java)<i></p>
-
-<p>jUnit test files location:<br>
-<ul>
-<li><a href="https://github.com/kliba/intersect/blob/master/src/test/java/test_readerer_of_JSON/TestJSONToRectangles.java">TestJSONToRectangles</a></li>
-<li><a href="https://github.com/kliba/intersect/blob/master/src/test/java/test_intersectings/TestIntersectedRectangles.java">TestIntersectedRectangles</a></li>
-</ul></p>
 
 
 <h4>Idea</h4>
