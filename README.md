@@ -1,31 +1,34 @@
-Multiple Intersects
+Intersect Project
 
 Project:
-It is a simple console program. Reads rectangle parameters (xy coordinates and height width)
-from a defined JSON array. After a JSON file validation there are two lists outputted:
-1, all rectangles
-2, all intersections (single intersections and multiple intersections
+  It reads from a specified JSON file rectangles. The rectangle numbers are defined by a MAX value.
+  Then it returns two different list:
+    1, contains every *valid rectangle
+    2, contains every *valid intersections
+
+(*valid: width and height of rectangle is positive integer, this rectangle can be placed to 2d integer coordinate table)
+
 
 Rules:
-- Must able to process max 10 valid rectangles.
-- Must not contain duplicated rectangles intersection values.
-- Must be able to list all intersections of two or more rectangles
+  - Must not contain duplicated rectangles intersection values.
+  - Must be able to list all intersections of two or more rectangles
+
 
 Technical details:
-It is developed under JAVA 1.8.0.201 version.
-Using Gradle building tool.
-Following tool kits are built:
-junit 4.12
-com.googlecode.json-simple 1.1.1
+  It is developed under JAVA 1.8.0.201 version.
+  Using Gradle building tool.
+  Following tool kits are built:
+    -junit 4.12
+    -com.googlecode.json-simple 1.1.1
 
 As the build.gradle file is committed you can find the dependencies of them.
-(link: https://github.com/kliba/intersect/blob/master/build.gradle)
+  (link: https://github.com/kliba/intersect/blob/master/build.gradle)
 
 The entry point locates in the Main.class so it can be executed from:
-./intersect/src/main/java/Main.java
+  (path: ./intersect/src/main/java/Main.java)
 
 Idea:
-This project created to list the rectangles intersection. The project uses packages so the structure allows to
-implement another plane figures intersections (e.g: triangle, circle, lozenge etc...) function.
+  This project created to list the rectangles intersection. The project uses packages so the structure allows to
+  implement another plane figures intersections (e.g: triangle, circle, lozenge etc...) function.
 
-If you like this feel free to use it. No license agreement necessary.
+If you like this feel free to use it. No license agreement required.
